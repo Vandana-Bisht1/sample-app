@@ -11,7 +11,7 @@ function Countries() {
 
   return (
     <div className="container">
-      <h2>Countries</h2>
+      <h2>Countries with Capitals (GraphQL Example)</h2>
       <div className="countries">
         {data.countries.map((country) => (
           <div key={country.code} className="country-card">

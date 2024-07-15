@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ApolloProvider } from '@apollo/client';
 import client from './graphql/apolloClient';
 import Countries from './graphql/Countries';
+import TodoList from './rxdb/TodoList';
 import './App.css';
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
       case 'tab1':
         return <Countries />;
       case 'tab2':
-        return <h2>Tab2</h2>;
+        return <TodoList />;
       default:
         return <Countries />;
     }
